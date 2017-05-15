@@ -1,0 +1,31 @@
+.top{
+  width: 1270px;
+  height: 90px;
+  background-color: rgba(0,255,0,0.3);
+  margin-top: 80px;
+  margin-left: -30px;
+
+
+}
+.body{
+  background-image: url(splash.jpg);
+  height: 900px;
+}
+.navs{
+  margin-left: 400px;
+}
+.udaku{
+  margin-left: -300px;
+  padding-top: 10px;
+}
+.icons{
+  margin-left: 300px;
+}
+.icon:hover{
+  color: pink;
+  background-color: white;
+}
+.
+#story {
+       display: none;
+     }
