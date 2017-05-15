@@ -1,34 +1,57 @@
-.top{
+.top {
   width: 1270px;
   height: 150px;
-  background-color:rgba(192,192,192,0.3);
+  background-color: white;
   margin-top: 0px;
   margin-left: -60px;
-
-
 }
-.body{
-  background-image: url(splash.jpg);
-  height: 900px;
-}
-.navs{
+
+.navs {
   margin-left: 400px;
 }
-.udaku{
+
+.udaku {
   margin-left: -300px;
   padding-top: 10px;
 }
-.icons{
+
+.icons {
   margin-left: 300px;
 }
-.icon:hover{
-  color: pink;
-  background-color: white;
+
+.icon:hover {
+  color: blue;
+  background-color: black;
 }
-.
-#story {
-       display: none;
-     }
-.co{
+
+. #story {
+  display: none;
+}
+
+.co {
   margin-top: 40px;
+}
+
+.intro {
+  background-image: url(poverty.jpg);
+  background-size: cover;
+  height: 500px;
+  padding-top: 60px;
+  margin-left: -111px;
+  margin-right: -110px;
+}
+.news{
+  color: red;
+  font-size: 100px;
+
+}
+.new{
+  color: black;
+  font-size: 150px;
+}
+#bottomdiv{
+  background-color:rgb(165, 18, 62);
+  height: 500px;
+  margin-left: -100px;
+  margin-right: -110px;
 }
