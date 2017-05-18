@@ -1,20 +1,45 @@
+$(document).ready(function(){
+  $(".move").click(function(){
+    $(".all").hide();
+     $(".welcome").show(3000);
+  });
+
+});
+
 $(document).ready(function() {
-        $("#blanks form").submit(function(event) {
-          var person1Input = $("input#person1").val();
-          var person2Input = $("input#person2").val();
-          var animalInput= $("input#animal").val();
-          var exclamationInput = $("input#exclamation").val();
-          var verbInput = $("input#verb").val();
-          var nounInput = $("input#noun").val();
-          $(".person1").append(person1Input);
-          $(".person2").append(person2Input);
-          $(".animal").append(animalInput);
-          $(".exclamation").append(exclamationInput);
-          $(".verb").append(verbInput);
-          $(".noun").append(nounInput);
 
-          $("#story").show();
+var count = 0;
+ var images = ["home.jpg","co.jpg"]
+ var image = $("#us");
 
-          event.preventDefault();
-        });
-      });
+image.css("background-image", "url(" + images[count] + ")");
+setInterval(function() {
+   image.fadeOut(300, function() {
+     image.css("background-image", "url(" + images[count++] + ")");
+     image.fadeIn(300);
+   });
+   if (count === images.length) {
+     count = 0;
+   }
+ }, 10000);
+
+});
+
+$(document).ready(function() {
+
+var count = 0;
+ var images = ["home.jpg","ca3.jpg","ca4.jpg","children.jpg"]
+ var image = $(".intro");
+
+image.css("background-image", "url(" + images[count] + ")");
+setInterval(function() {
+   image.fadeOut(300, function() {
+     image.css("background-image", "url(" + images[count++] + ")");
+     image.fadeIn(300);
+   });
+   if (count === images.length) {
+     count = 0;
+   }
+ }, 10000);
+
+});
